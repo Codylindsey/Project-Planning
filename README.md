@@ -1,6 +1,6 @@
 # Project-Planning
 
-# IT Senior Cpston- Group 3
+# IT Senior Capstone- Group 3
 
-Andrew Eagle, Cam'ron Coleman, Cody Lindsey, Quandre Lewis
+# Andrew Eagle, Cam'ron Coleman, Cody Lindsey, Quandre Lewis
 
