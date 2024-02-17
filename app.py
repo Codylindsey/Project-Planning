@@ -2,16 +2,15 @@ from flask import Flask, render_template
 
 app = Flask(__name__) 
 
-@app.route('/')
+@app.route('/') # for home page
 def home():
     # Logic to fetch user's fitness data (workout summary, calories burned, goals achieved)
     workout_summary = "Some summary"
     calories_burned = "Calories burned"
     goals_achieved = "Goals achieved"
-    return "<h1>Test</h1>"
     return render_template('home.html', summary=workout_summary, calories=calories_burned, goals=goals_achieved)
 
-@app.route('/workout-log')
+@app.route('/workout_log')
 def workout_log():
     # Logic to fetch and display workout log
     return render_template('workout_log.html')
