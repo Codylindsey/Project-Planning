@@ -2,15 +2,18 @@
 <html lang= "en">
     <head>
         <meta charset="utf-8">
-        <title>Fitness Hub Home</title>
-        <h2>Start Your Journey, Reach Your Peak</h2>
+        <h1>Fitness Hub</h1>
+        <h3>Start Your Journey, Reach Your Peak</h3>
+        <h2>Home </h2>
     </head>
+    <nav>
+        <a href= "/workout_log">Workout Log</a>
+        <a href= "/goals">Goals</a>
+        <a href= "/profile">Profile</a>
+     </nav>
     <body>
-        <nav>
-           <a href= "/">Home</a> 
-           <a href= "/workout_log">Workout Log</a>
-           <a href= "/goals">Goals</a>
-           <a href= "/profile">Profile</a>
-        </nav>
+        <p>Workout Summary: {{ summary }}</p>
+        <p>Calories Burned: {{ calories }}</p>
+        <p>Goals Achieved: {{ goals }}</p>
     </body>
 </html>

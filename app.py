@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/') # for home page
 def home():
     # Logic to fetch user's fitness data (workout summary, calories burned, goals achieved)
-    workout_summary = "Some summary"
+    workout_summary = "Summary"
     calories_burned = "Calories burned"
     goals_achieved = "Goals achieved"
     return render_template('home.html', summary=workout_summary, calories=calories_burned, goals=goals_achieved)
