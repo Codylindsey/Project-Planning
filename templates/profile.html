@@ -13,11 +13,31 @@
  <body>
   <fieldset>
     <legend>Profile Information</legend>
+    <form action="/submit" method="post"></form>
       <label for="nBox">Full Name</label>
       <input type="text" name="Name" id="nBox"> 
       <br />
       <label for="mailBox">E-mail</label>
       <input type="email" name="email" id="mailBox">
+      <br />
+      <label for="AgeBox">Age</label>
+      <input type="number" name="Age" id="AgeBox"> 
+      <br />
+      <label for="WeightBox">Weight</label>
+      <input type="number" name="Weight" id="WeightBox">
+      <br />
+      <input type="submit" value="Submit">
+  </form>
+  </fieldset>
+  <fieldset>
+    <legend>Account Information</legend>
+    <label for="UserBox">UserID</label>
+    <input type="text" name="ID" id="UserBox"> 
+    <br />
+    <label for="PwBox">Password</label>
+    <input type="text" name="password" id="PwBox">
+    <br />
+    <input type="submit" value="Submit">
   </fieldset>
  </body>
 </html>

@@ -10,4 +10,22 @@
     <a href= "/goals">Goals</a>
     <a href= "/profile">Profile</a>
  </nav>
+ <h2>Let's Set Your Goals!</h2>
+    <form action="/submit-goal" method="post">
+        <label for="goalType">Goal Type:</label><br>
+        <select id="goalType" name="goalType">
+            <option value="dailySteps">Daily Steps</option>
+            <option value="weeklyCalories">Weekly Calories</option>
+            <option value="monthlyExercise">Monthly Exercise Minutes</option>
+        </select><br>
+        <label for="goal">Goal:</label><br>
+        <input type="text" id="goal" name="goal"><br>
+        <label for="startDate">Start Date:</label><br>
+        <input type="date" id="startDate" name="startDate"><br>
+        <label for="endDate">End Date:</label><br>
+        <input type="date" id="endDate" name="endDate"><br>
+        <label for="completed">Goal Achieved:</label>
+        <input type="checkbox" id="completed" name="completed"><br>
+        <input type="submit" value="Set Goal">
+    </form>
 </html>
