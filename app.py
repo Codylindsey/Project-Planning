@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 
 app = Flask(__name__) 
 
@@ -24,6 +24,13 @@ def goals():
 def profile():
     # Logic to fetch and display user profile
     return render_template('profile.html')
+
+@app.route('/formProcessor', methods=['POST'])
+def formProcessor():
+    name = request.form['name']
+    email = request.form['email']
+    message = request.form['message']
+    return render_template('result.html', name=name, email=email, message=message)
 
 if __name__ == '__main__':
     app.run(debug=True)
